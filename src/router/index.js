@@ -3,6 +3,35 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: "/",
+    redirect: "/home"
+  },
+  {
+    path: "/home",
+    name: "home",
+    component: () => import("../pages/home/Home")
+  },
+  {
+    path: "/cation",
+    name: "cation",
+    component: () => import("../pages/cation/cation")
+  },
+  {
+    path: "/search",
+    name: "search",
+    component: () => import("../pages/search/search")
+  },
+  {
+    path: "/shopcart",
+    name: "shopcart",
+    component: () => import("../pages/shopcart/shopcart")
+  },
+  {
+    path: "/myinfo",
+    name: "myinfo",
+    component: () => import("../pages/myinfo/myinfo")
+  }
   // {
   //   path: "/about",
   //   name: "About",
@@ -15,7 +44,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: "hash",
+  mode: "history",
   base: process.env.BASE_URL,
   routes
 });
