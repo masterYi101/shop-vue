@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <h1>hello world</h1>
-    <Button>11111</Button>
+    <h1 class="title">hello world</h1>
   </div>
 </template>
 
 <script>
-
 export default {
   data() {
-    return {}
-  }
+    return {};
+  },
+  methods: {}
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.title {
+  height: 300px;
+}
+</style>
