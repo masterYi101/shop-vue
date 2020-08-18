@@ -1,5 +1,5 @@
 ,<template>
-  <div class="footer-bar">
+  <div class="footer-bar" v-if="isone">
     <van-tabbar
       @change="change"
       active-color="red"
@@ -23,6 +23,13 @@ export default {
     return {
       active: ""
     };
+  },
+  computed: {
+    isone() {
+      return ["/home", "/cation", "/search", "/shopcart", "/myinfo"].includes(
+        this.$route.path
+      );
+    }
   },
   methods: {
     change(e) {

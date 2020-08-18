@@ -2,6 +2,7 @@
   <div id="app">
     <title-bar></title-bar>
     <router-view></router-view>
+
     <footer-bar></footer-bar>
   </div>
 </template>
@@ -21,8 +22,13 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.title {
-  height: 300px;
+<style lang="scss" scoped>
+#app {
+  width: 100vw;
+  overflow: auto;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  height: 100%;
 }
+
 </style>

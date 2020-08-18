@@ -2,8 +2,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
 }
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+.van-nav-bar__title.van-ellipsis {
+  color: white;
+  font-size: 20px;
+}
+.van-icon.van-icon-arrow-left.van-nav-bar__arrow {
+  color: white;
+  font-size: 20px;
+}
+html body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.ww {
+  width: 100%;
+}
+.hh {
+  height: 100%;
+}
+.red {
+  color: red;
+}
+.flex-c {
+  display: flex;
+  flex-direction: column;
 }

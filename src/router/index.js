@@ -31,6 +31,11 @@ const routes = [
     path: "/myinfo",
     name: "myinfo",
     component: () => import("../pages/myinfo/myinfo")
+  },
+  {
+    path: "/splist/:id",
+    name: "splist",
+    component: () => import("../components/sp-list/sp-list")
   }
   // {
   //   path: "/about",
