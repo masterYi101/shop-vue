@@ -1,12 +1,27 @@
 <template>
-  <div v-if="$route.path === '/home'" class="title-bar">
-    <van-nav-bar class="title" title="哈哈眼镜商城" />
+  <div v-if="xianshi" class="title-bar">
+    <van-nav-bar class="title" :title="text" />
   </div>
 </template>
 
 <script>
+const obj = {
+  "/home": "眼镜商城",
+  "/cation": "分类",
+  "/shopcart": "购物车"
+};
 export default {
-  name: "title-bar"
+  name: "title-bar",
+  computed: {
+    //是否显示
+    xianshi() {
+      return ["/home", "/cation", "/shopcart"].includes(this.$route.path);
+    },
+    //动态文本
+    text() {
+      return obj[this.$route.path];
+    }
+  }
 };
 </script>
 

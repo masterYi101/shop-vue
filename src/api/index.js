@@ -27,3 +27,6 @@ export const getCommendList = createfn("/json/commend-list.json");
 //获取商品详情
 
 export const getGoodsDetail = createfn("/json/goods-detail.json");
+
+//获取分类数据
+export const getCation = createfn("/json/assort.json");
