@@ -8,7 +8,14 @@ import {
   Swipe,
   SwipeItem
 } from "vant";
-import { GoodsAction, GoodsActionIcon, GoodsActionButton, Toast } from "vant";
+import {
+  GoodsAction,
+  GoodsActionIcon,
+  GoodsActionButton,
+  Toast,
+  Search,
+  Loading
+} from "vant";
 [
   Button,
   NavBar,
@@ -20,5 +27,7 @@ import { GoodsAction, GoodsActionIcon, GoodsActionButton, Toast } from "vant";
   GoodsAction,
   GoodsActionIcon,
   GoodsActionButton,
-  Toast
+  Toast,
+  Search,
+  Loading
 ].map(e => Vue.use(e));

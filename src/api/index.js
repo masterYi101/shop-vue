@@ -30,3 +30,6 @@ export const getGoodsDetail = createfn("/json/goods-detail.json");
 
 //获取分类数据
 export const getCation = createfn("/json/assort.json");
+
+//获取搜索结果
+export const getSearch = createfn("/json/search-detail.json");
