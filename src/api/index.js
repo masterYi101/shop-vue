@@ -33,3 +33,10 @@ export const getCation = createfn("/json/assort.json");
 
 //获取搜索结果
 export const getSearch = createfn("/json/search-detail.json");
+
+//获取购物车结果
+
+export const getCart = createfn("/json/cart.json");
+
+//获取订单分类
+export const getOrder = createfn("/json/order.json");

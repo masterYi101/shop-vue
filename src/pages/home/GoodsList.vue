@@ -36,6 +36,7 @@ export default {
 
 <style lang="scss" scoped>
 .GoodsList .item {
+  background: white;
   width: 50%;
   text-align: center;
   display: inline-block;

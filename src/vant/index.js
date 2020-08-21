@@ -14,7 +14,11 @@ import {
   GoodsActionButton,
   Toast,
   Search,
-  Loading
+  Loading,
+  SubmitBar,
+  Checkbox,
+  AddressList,
+  AddressEdit,
 } from "vant";
 [
   Button,
@@ -29,5 +33,9 @@ import {
   GoodsActionButton,
   Toast,
   Search,
-  Loading
+  Loading,
+  SubmitBar,
+  Checkbox,
+  AddressList,
+  AddressEdit,
 ].map(e => Vue.use(e));

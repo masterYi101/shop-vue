@@ -1,5 +1,5 @@
 <template>
-  <div class="info">
+  <div class="info1">
     <div class="tuwen">
       <div class="title">图文详情</div>
       <h2 class="info">产品信息</h2>
@@ -40,6 +40,10 @@ export default {
 
   font-size: 28px;
 }
+.info1 {
+  font-size: 32px;
+  padding: 20px 0 0px;
+}
 .tuwen {
   border-top: 1px solid silver;
   border-bottom: 1px solid silver;
@@ -47,11 +51,6 @@ export default {
   margin-top: 20px;
   padding: 30px 20px 30px;
 
-  .info {
-    height: 72px;
-    font-size: 32px;
-    padding: 20px 0;
-  }
   .table {
     margin-top: 30px;
     padding-bottom: 30px;

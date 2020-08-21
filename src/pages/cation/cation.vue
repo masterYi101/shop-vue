@@ -4,6 +4,7 @@
       <ul>
         <li
           @click="switchtab(d)"
+          class="flex"
           :class="d === active ? `active` : ``"
           v-for="(i, d) in data"
           :key="i.text"
@@ -15,7 +16,7 @@
     <div class="right hh">
       <ul class="flex-c ul">
         <transition-group>
-          <li class="item  flex" v-for="i in list" :key="i.id">
+          <li class="item flex" v-for="i in list" :key="i.id">
             <div class="img">
               <img :src="i.img" />
             </div>
@@ -62,6 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 .cation {
+  margin-top: 100px;
   background-color: #f2f2f2;
 }
 .active {
@@ -96,7 +98,8 @@ export default {
     margin: 20px 0;
   }
   .img {
-    width: 187px;
+    width: 160px;
+    margin-right: 10px;
     flex-shrink: 0;
   }
   .text {

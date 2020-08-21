@@ -1,8 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" ref="app">
     <title-bar></title-bar>
     <router-view></router-view>
-
     <footer-bar></footer-bar>
   </div>
 </template>
@@ -11,10 +10,6 @@
 import Title from "./components/Title/Title";
 import Footer from "./components/Footer/Footer";
 export default {
-  data() {
-    return {};
-  },
-  methods: {},
   components: {
     "title-bar": Title,
     "footer-bar": Footer
@@ -24,11 +19,10 @@ export default {
 
 <style lang="scss" scoped>
 #app {
-  width: 100vw;
+  background: #f2f2f2;
+  width: 100%;
   overflow: auto;
-  padding-bottom: 100px;
-  padding-top: 100px;
   height: 100%;
+  padding-bottom: 100px;
 }
-
 </style>

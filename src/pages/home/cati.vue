@@ -6,19 +6,19 @@
     </dl>
     <dl>
       <dt></dt>
-      <dd>框架</dd>
+      <dd>镜片</dd>
     </dl>
     <dl>
       <dt></dt>
-      <dd>框架</dd>
+      <dd>镜片</dd>
     </dl>
     <dl>
       <dt></dt>
-      <dd>框架</dd>
+      <dd>镜片</dd>
     </dl>
     <dl>
       <dt></dt>
-      <dd>框架</dd>
+      <dd>镜片</dd>
     </dl>
   </div>
 </template>
@@ -26,12 +26,14 @@
 <script>
 export default {
   name: "cati",
-  functional:true
+  functional: true
 };
 </script>
 
 <style lang="scss" scoped>
 .cati {
+  background: white;
+  border-bottom: 1px solid #aaa;
   height: 170px;
   justify-content: space-between;
   dl {

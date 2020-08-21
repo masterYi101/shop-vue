@@ -1,5 +1,5 @@
 <template>
-  <div class="commend-list">
+  <div class="commend-list" @click="jumpGoods">
     <div class="item flex" v-for="i in list" :key="i.img">
       <div class="top flex">
         <div class="img">
@@ -35,14 +35,22 @@ export default {
   },
   created() {
     getCommendList().then(e => (this.list = e.data));
-  }
+  },
+  methods: {
+    jumpGoods(){
+    this.$router.push("/splist/*")
+    }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.item {
-  flex-direction: column;
 
+.item {
+  background: white;
+
+  flex-direction: column;
+  margin-bottom: 10px;
   height: 444px;
   .top {
     padding-top: 18px;

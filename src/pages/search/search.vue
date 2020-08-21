@@ -22,7 +22,9 @@
         <span @click="clear" class="hh clear"> 清空记录</span>
       </div>
       <div class="list ">
-        <span flex v-for="i in list" :key="i" class="item ">{{ i }}</span>
+        <span @click="lishijilu" v-for="(i, d) in list" :key="d" class="item">{{
+          i
+        }}</span>
       </div>
     </div>
     <!-- 搜素结果 -->
@@ -65,7 +67,7 @@ export default {
   data() {
     return {
       value: "",
-      list: ["明月", "海昌", "隐形眼镜"], //历史记录
+      list: new Set(["明月", "海昌", "隐形眼镜"]), //历史记录
       result: [],
       loading: false
     };
@@ -75,7 +77,7 @@ export default {
     onSearch() {
       if (this.value) {
         this.loading = true;
-        this.list.push(this.value);
+        this.list.add(this.value);
         getSearch().then(data => {
           setTimeout(() => {
             this.result = data.data.list;
@@ -83,6 +85,10 @@ export default {
           }, 500);
         });
       }
+    },
+    lishijilu(e) {
+      this.value = e.target.innerText;
+      this.onSearch();
     },
     //清空记录
     clear() {

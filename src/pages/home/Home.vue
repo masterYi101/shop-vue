@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" ref="home">
     <!-- 轮播图 -->
     <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
       <van-swipe-item v-for="i in bannes" :key="i.id">
@@ -45,6 +45,7 @@ export default {
     //获取轮播图
     getBanne().then(({ data }) => (this.bannes = data));
   },
+
   components: {
     "cati-options": Cati,
     "remide-title": remind,
@@ -56,6 +57,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.home {
+  margin-top: 100px;
+}
 .my-swipe {
   height: 300px;
   width: 100%;

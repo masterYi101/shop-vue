@@ -146,7 +146,7 @@ export default {
     //购买按钮
     buyNow() {
       //跳转到购物车
-      console.log(2);
+      this.$router.push("/shopcart");
     }
   },
   created() {
@@ -161,7 +161,6 @@ export default {
 }
 .sp-list {
   width: 100%;
-  height: 100px;
   .title {
     position: fixed;
     top: 0;
@@ -232,7 +231,7 @@ export default {
         text-align: right;
         background: #999999;
         width: 100%;
-        font-size: 10px;
+        font-size: 20px;
       }
     }
     .right {
@@ -309,16 +308,5 @@ export default {
       font-size: 40px;
     }
   }
-}
-
-//过渡动画
-.v-enter {
-  opacity: 0.3;
-}
-.v-enter-active {
-  transition: all 0.8s ease;
-}
-.v-enter-to {
-  opacity: 1;
 }
 </style>

@@ -1,12 +1,6 @@
 ,<template>
   <div class="footer-bar" v-if="isone">
-    <van-tabbar
-      @change="change"
-      active-color="red"
-      route
-      class="tabbar"
-      v-model="active"
-    >
+    <van-tabbar active-color="red" route class="tabbar" v-model="active">
       <van-tabbar-item to="/home" icon="home-o">主页</van-tabbar-item>
       <van-tabbar-item to="/cation" icon="apps-o">分类</van-tabbar-item>
       <van-tabbar-item to="/search" icon="search">搜搜</van-tabbar-item>
@@ -30,21 +24,16 @@ export default {
         this.$route.path
       );
     }
-  },
-  methods: {
-    change(e) {
-      console.log(e);
-    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.tabbar {
-  position: fixed;
-  bottom: 0;
+.footer-bar {
   width: 100vw;
   height: 100px;
+  position: fixed;
+  bottom: 0;
 }
 </style>
 <style lang="scss">
