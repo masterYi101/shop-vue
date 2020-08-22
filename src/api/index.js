@@ -1,10 +1,5 @@
 import axios from "axios";
-axios.interceptors.response.use(response => {
-  if (response.status !== 200) {
-    console.log(response.status);
-  }
-  return response;
-});
+
 const createfn = function(url) {
   return function() {
     let a = axios.get(url);

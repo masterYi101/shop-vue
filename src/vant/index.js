@@ -18,7 +18,7 @@ import {
   SubmitBar,
   Checkbox,
   AddressList,
-  AddressEdit,
+  AddressEdit
 } from "vant";
 [
   Button,
@@ -37,5 +37,5 @@ import {
   SubmitBar,
   Checkbox,
   AddressList,
-  AddressEdit,
+  AddressEdit
 ].map(e => Vue.use(e));

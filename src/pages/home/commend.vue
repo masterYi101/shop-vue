@@ -37,15 +37,14 @@ export default {
     getCommendList().then(e => (this.list = e.data));
   },
   methods: {
-    jumpGoods(){
-    this.$router.push("/splist/*")
+    jumpGoods() {
+      this.$router.push("/splist/*");
     }
-  },
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-
 .item {
   background: white;
 

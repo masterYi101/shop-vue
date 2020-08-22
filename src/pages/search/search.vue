@@ -107,6 +107,7 @@ export default {
   width: 100vw;
 }
 .search {
+  margin-top: 100px;
   min-height: 100%;
   background: #f2f2f2;
 }

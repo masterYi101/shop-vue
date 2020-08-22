@@ -30,7 +30,7 @@ export default {
   },
   created() {
     getGoodsList().then(({ data }) => (this.list = data));
-  },
+  }
 };
 </script>
 

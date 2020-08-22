@@ -1,13 +1,15 @@
 <template functional>
   <div class="remind flex">
-    <h3 class="flex"><van-icon class="icon" :name="props.icon" />{{props.text}}</h3>
+    <h3 class="flex">
+      <van-icon class="icon" :name="props.icon" />{{ props.text }}
+    </h3>
   </div>
 </template>
 
 <script>
 export default {
   name: "remind",
-  functional:true,
+  functional: true,
   props: {
     icon: {
       type: String,
@@ -28,11 +30,9 @@ export default {
   font-size: 36px;
   h3 {
     font-weight: 800;
-
   }
   .icon {
     margin-right: 10px;
   }
-
 }
 </style>
